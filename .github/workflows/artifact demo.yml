@@ -10,10 +10,10 @@ jobs:
        - name: create file
          run: |
             mkdir temp
-            echo "aipha" > temp/alpha.html
+            echo "alpha" > temp/alpha.html
 
        - name: Upload artifact
-         uses: action/upload-artifact@v4
+         uses: actions/upload-artifact@v4
          with:
            name: files
            path: temp/
